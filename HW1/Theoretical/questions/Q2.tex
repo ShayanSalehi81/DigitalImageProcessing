@@ -1,0 +1,27 @@
+
+در نمودار، دو ناحیه‌ی جداگانه سایه‌خورده است.
+
+ناحیه‌ی بالا-راست داخلِ $A$ و $C$ است ولی داخلِ $B$ نیست؛ پس:
+\[
+(A\cap C)\setminus B \,=\, A\cap C\cap B^{c}.
+\]
+
+ناحیه‌ی پایین-چپ داخلِ $A$ و $B$ است ولی داخلِ $C$ نیست؛ پس:
+\[
+(A\cap B)\setminus C \,=\, A\cap B\cap C^{c}.
+\]
+
+بنابراین کل ناحیه‌ی سایه‌خورده برابر اجتماعِ این دو قسمت است:
+\[
+\big((A\cap C)\setminus B\big)\;\cup\;\big((A\cap B)\setminus C\big).
+\]
+
+اگر از تعریف تفاضلِ متقارن یا همان \lr{symmetric difference} استفاده کنیم، داریم:
+\[
+\big((A\cap C)\setminus B\big)\cup\big((A\cap B)\setminus C\big)
+\;=\;
+A\cap\big((C\setminus B)\cup(B\setminus C)\big)
+\;=\;
+A\cap (B\,\triangle\,C).
+\]
+به بیان دیگر: نقاطی از $A$ که دقیقاً در یکی از $B$ یا $C$ قرار دارند.
