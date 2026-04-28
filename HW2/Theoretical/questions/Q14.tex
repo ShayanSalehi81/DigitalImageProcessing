@@ -1,0 +1,81 @@
+\LTR
+
+\section*{1. Engineering Choices in an Imaging System (20 points)}
+
+Consider a system intended to acquire and transmit images of printed pages containing thin lines, formulas, and small text. Assume that scene motion is negligible, spatial detail is important, and the final output is displayed digitally.
+
+\begin{enumerate}
+    \item[\textbf{(a)}] Draw a complete block diagram for the processing chain: input image $\rightarrow$ sampler $\rightarrow$ quantizer $\rightarrow$ digital processing/storage $\rightarrow$ display.
+    \item[\textbf{(b)}] Among scan-out, self-scanning array, and scan-in, choose the most suitable acquisition method for this application and justify your choice. Use these terms according to the definitions given in the course notes/lectures.
+    \item[\textbf{(c)}] Explain briefly why the other two scanning methods are less suitable in this scenario.
+    \item[\textbf{(d)}] State whether interlaced scanning is a good choice here. Give two technical reasons for your answer.
+    \item[\textbf{(e)}] Compare NTSC, PAL/SECAM, and CIF for this application. Treat these as historical video-format references rather than ideal modern document-imaging solutions. Based on spatial resolution, scan structure, and suitability for text/formula display, argue which is the most reasonable among them, or explain why none of them is truly ideal for this task.
+\end{enumerate}
+
+\section*{2. The Alias Case File: From 1-D to 2-D (30 points)}
+
+\subsection*{Part I: 1-D signal}
+Let $x(t) = \sin(2\pi \cdot 8t)$ be sampled at $fs = 8.5 \text{ Hz}$.
+
+\begin{enumerate}
+    \item[\textbf{(a)}] Explain why this sampling rate does not satisfy a safe Nyquist condition for the signal.
+    \item[\textbf{(b)}] Find the apparent aliased frequency in the baseband.
+    \item[\textbf{(c)}] Explain, in words, why the sampled points may suggest a much lower-frequency waveform than the original one.
+    \item[\textbf{(d)}] Give one different sinusoidal signal that would generate exactly the same sample sequence when sampled with $fs = 8.5 \text{ Hz}$.
+\end{enumerate}
+
+\subsection*{Part II: 2-D image}
+Let $f(x, y) = 2 \cos(2\pi(3x + 4y))$ and let $\Delta x = \Delta y = 0.2$.
+
+\begin{enumerate}
+    \item[\textbf{(e)}] Describe the Fourier spectrum of the original image and identify its support points.
+    \item[\textbf{(f)}] Compute the sampling frequencies along $x$ and $y$, and check the Nyquist condition in each direction.
+    \item[\textbf{(g)}] Assume an ideal low-pass reconstruction filter whose cutoffs are equal to half of the sampling frequencies in each direction. Determine the reconstructed image.
+    \item[\textbf{(h)}] Without repeating the full derivation, explain what would change if $\Delta x = 0.1$ and $\Delta y = 0.1$ were used instead.
+\end{enumerate}
+
+\section*{3. Reconstruction in the Real World (25 points)}
+
+Consider the $4\times 4$ image below:\\
+$\mathbf{M} =$
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    0 & 0 & 0 & 0 \\
+    \hline
+    0 & 8 & 8 & 0 \\
+    \hline
+    0 & 8 & 8 & 0 \\
+    \hline
+    0 & 0 & 0 & 0 \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\begin{enumerate}
+    \item[\textbf{(a)}] If this image is magnified by a factor of 2 using zero-order hold (ZOH), describe the visual appearance of the result. A qualitative description or sketch is sufficient; you do not need to write the full $8\times 8$ matrix.
+    \item[\textbf{(b)}] Answer the same question for first-order hold (FOH) / linear interpolation. Again, a qualitative description or sketch is sufficient.
+    \item[\textbf{(c)}] Explain why cubic spline interpolation usually produces a more natural result than ZOH and FOH.
+    \item[\textbf{(d)}] Suppose each sensor element averages light over a small square area instead of measuring an ideal point. Explain the effect of this finite aperture in the spatial domain and in the frequency domain.
+    \item[\textbf{(e)}] Why can the same finite-aperture effect be viewed as harmful in one sense and helpful in another sense?
+    \item[\textbf{(f)}] If the image spectrum is approximately circular, explain geometrically why hexagonal sampling can be more efficient than rectangular sampling.
+\end{enumerate}
+
+\section*{4. From Uniform Quantization to Lloyd-Max (25 points)}
+
+Assume a discrete source $x \in \{-3, -2, -1, 0, 1, 2, 3\}$ with probability mass function $P(x) = \{0.05, 0.10, 0.15, 0.40, 0.15, 0.10, 0.05\}$.
+
+Design a 2-bit quantizer.
+
+\textbf{Convention:} \textit{if a sample falls exactly on a decision threshold, assign it to the interval on the right.}
+
+\begin{enumerate}
+    \item[\textbf{(a)}] Design a uniform quantizer with 4 reconstruction levels over the interval $[-3.5, 3.5]$. State all decision levels and reconstruction levels.
+    \item[\textbf{(b)}] Compute the mean-squared quantization error for your uniform quantizer.
+    \item[\textbf{(c)}] Starting from the same decision regions in part (a), perform one Lloyd-Max update: first compute the new reconstruction levels using centroids, then compute the updated decision levels using midpoints.
+    \item[\textbf{(d)}] Explain why repeating the centroid and midpoint updates can reduce the mean-squared error.
+    \item[\textbf{(e)}] State under what assumptions the approximation $\text{SNR} \approx 6\text{B dB}$ becomes meaningful.
+    \item[\textbf{(f)}] Explain conceptually how a compandor uses a nonlinear compressor, a uniform quantizer, and an expander to mimic a nonuniform quantizer.
+\end{enumerate}
+
+\RTL
