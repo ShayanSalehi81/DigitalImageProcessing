@@ -1,0 +1,127 @@
+\subsection*{الف}
+برای بررسی \lr{orthonormal} بودن، ضرب داخلی‌ها را حساب می‌کنیم:
+\begin{flalign*}
+s_0^T s_0 &= \left(\frac{1}{\sqrt{2}}\begin{bmatrix}1\\[2pt]1\end{bmatrix}\right)^T
+           \left(\frac{1}{\sqrt{2}}\begin{bmatrix}1\\[2pt]1\end{bmatrix}\right)
+= \frac{1}{2}(1^2+1^2)=1, \\
+s_1^T s_1 &= \left(\frac{1}{\sqrt{2}}\begin{bmatrix}1\\[2pt]-1\end{bmatrix}\right)^T
+           \left(\frac{1}{\sqrt{2}}\begin{bmatrix}1\\[2pt]-1\end{bmatrix}\right)
+= \frac{1}{2}(1^2+(-1)^2)=1, \\
+s_0^T s_1 &= \left(\frac{1}{\sqrt{2}}\begin{bmatrix}1\\[2pt]1\end{bmatrix}\right)^T
+           \left(\frac{1}{\sqrt{2}}\begin{bmatrix}1\\[2pt]-1\end{bmatrix}\right)
+= \frac{1}{2}(1\cdot 1 + 1\cdot (-1))=0. &&
+\end{flalign*}
+پس هر دو بردار نُرمِ ۱ دارند و نسبت به هم عمود هستند؛ بنابراین پایه‌ها \lr{orthonormal} هستند.
+
+\subsection*{ب}
+ماتریس تبدیل را از کنار هم گذاشتن پایه‌ها می‌سازیم (به عنوان ستون‌ها):
+\begin{flalign*}
+A = [s_0\ s_1] = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1 & 1\\
+1 & -1
+\end{bmatrix}, \qquad A^T A = I \;\; \Rightarrow \;\; A^{-1}=A^T. &&
+\end{flalign*}
+تبدیلِ ماتریسِ $F$ در این پایه برابر است با:
+\[
+T = A^T F A.
+\]
+محاسبه:
+\begin{flalign*}
+F A
+&=
+\begin{bmatrix}
+20 & 63\\
+21 & 128
+\end{bmatrix}
+\cdot
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1 & 1\\
+1 & -1
+\end{bmatrix}
+=
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+83 & -43\\
+149 & -107
+\end{bmatrix},\\[6pt]
+T
+&=A^T (F A)
+=
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1 & 1\\
+1 & -1
+\end{bmatrix}
+\cdot
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+83 & -43\\
+149 & -107
+\end{bmatrix}
+=
+\frac{1}{2}
+\begin{bmatrix}
+232 & -150\\
+-66 & 64
+\end{bmatrix}
+=
+\begin{bmatrix}
+116 & -75\\
+-33 & 32
+\end{bmatrix}. &&
+\end{flalign*}
+
+\subsection*{ج}
+چون $A$ \lr{orthogonal} است، تبدیلِ معکوس به صورت زیر است:
+\[
+F = A T A^T.
+\]
+برای اثبات بازیابیِ دقیق، مستقیماً ضرب می‌کنیم:
+\begin{flalign*}
+T A
+&=
+\begin{bmatrix}
+116 & -75\\
+-33 & 32
+\end{bmatrix}
+\cdot
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1 & 1\\
+1 & -1
+\end{bmatrix}
+=
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+41 & 191\\
+-1 & -65
+\end{bmatrix},\\[6pt]
+A(TA)
+&=
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1 & 1\\
+1 & -1
+\end{bmatrix}
+\cdot
+\frac{1}{\sqrt{2}}
+\begin{bmatrix}
+41 & 191\\
+-1 & -65
+\end{bmatrix}
+=
+\frac{1}{2}
+\begin{bmatrix}
+40 & 126\\
+42 & 256
+\end{bmatrix}
+=
+\begin{bmatrix}
+20 & 63\\
+21 & 128
+\end{bmatrix}
+=F. &&
+\end{flalign*}
+پس تبدیلِ معکوس، دقیقاً ماتریس اولیه $F$ را بازسازی می‌کند.
