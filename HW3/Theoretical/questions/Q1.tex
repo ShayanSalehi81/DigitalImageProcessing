@@ -1,0 +1,52 @@
+با فرض تعریف
+$$F(u)=\int_{-\infty}^{\infty} f(x)\, e^{-j2\pi u x}\, \mathrm{d}x$$
+
+\subsection*{الف}
+$$f(x-3) \longleftrightarrow e^{-j2\pi u 3}\, F(u)$$
+
+\subsection*{ب}
+$$f^2(x)=f(x)f(x) \longleftrightarrow F(u)\ast F(u)$$
+
+\subsection*{ج}
+$$f(-x) \longleftrightarrow F(-u)$$
+
+\subsection*{د}
+$$f(4x-3)=f\!\left(4\left(x-\frac{3}{4}\right)\right)\longleftrightarrow \frac{1}{4}\, e^{-j2\pi u \frac{3}{4}}\, F\!\left(\frac{u}{4}\right)$$
+
+\subsection*{ه}
+$$F(x) \longleftrightarrow f(-u)$$
+
+\subsection*{و}
+برای $M=N=4$:
+$$F(u,v)=\sum_{x=0}^{3}\sum_{y=0}^{3} f(x,y)\, e^{-j2\pi\left(\frac{ux}{4}+\frac{vy}{4}\right)}$$
+با ترتیب سطر $u$ و ستون $v$:
+$$
+F(u,v)=
+\begin{bmatrix}
+264 & 80-80\mathrm{j} & 80 & 80+80\mathrm{j}\\
+8-8\mathrm{j} & 0 & 0 & 0\\
+8 & 0 & 0 & 0\\
+8+8\mathrm{j} & 0 & 0 & 0
+\end{bmatrix}
+$$
+
+\subsection*{ز}
+اگر
+$g(x,y)=f(x,y)(-1)^{x+y}$،
+آنگاه:
+$$
+G(u,v)=
+\begin{bmatrix}
+0 & 0 & 8 & 0\\
+0 & 0 & 8+8\mathrm{j} & 0\\
+80 & 80+80\mathrm{j} & 264 & 80-80\mathrm{j}\\
+0 & 0 & 8-8\mathrm{j} & 0
+\end{bmatrix}
+$$
+
+\subsection*{ح}
+ضرب در $(-1)^{x+y}=e^{j\pi(x+y)}$ باعث شیفت طیف به اندازه
+$(2,2)$
+می‌شود، بنابراین:
+$$G(u,v)=F\big((u-2)\bmod 4,\,(v-2)\bmod 4\big)$$
+یعنی همان ضرایب بخش قبل با جابه‌جایی ربع‌ها (مرکز کردن طیف).

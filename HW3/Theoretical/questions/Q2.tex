@@ -1,0 +1,32 @@
+\subsection*{الف}
+با قرار دادن $u=v=0$ داریم:
+\begin{flalign*}
+F(0,0) &= \frac{2 C(0) C(0)}{\sqrt{MN}}\sum_{i=0}^{7}\sum_{j=0}^{7} f(i,j)
+= \frac{1}{\sqrt{64}}\sum_{i=0}^{7}\sum_{j=0}^{7} f(i,j) \\
+&= \frac{1}{8}\times 5440 = 680 &&
+\end{flalign*}
+
+\subsection*{ب}
+ضریب \lr{DC} همان مؤلفه فرکانس صفر است و بیانگر مقدار ثابت (میانگین روشنایی) تصویر است:
+\begin{flalign*}
+F(0,0) = \frac{1}{\sqrt{MN}}\sum f(i,j) = \sqrt{MN}\,\overline{f}, \quad \overline{f}=\frac{1}{MN}\sum f(i,j)
+\end{flalign*}
+در اینجا $\overline{f}=85$ و بنابراین $F(0,0)=8\times 85=680$؛ چون این مؤلفه متناظر با سیگنال ثابت (بدون نوسان) است، به آن \lr{DC} می‌گویند.
+
+\subsection*{ج}
+تابع پایه دوبعدی را تعریف می‌کنیم:
+\begin{flalign*}
+\phi_{u,v}(i,j)=\frac{2 C(u) C(v)}{\sqrt{MN}}
+\cos\!\left(\frac{(2i+1)u\pi}{2M}\right)
+\cos\!\left(\frac{(2j+1)v\pi}{2N}\right)
+\end{flalign*}
+پس
+\begin{flalign*}
+F(u,v)=\sum_{i=0}^{7}\sum_{j=0}^{7} f(i,j)\,\phi_{u,v}(i,j)
+\end{flalign*}
+برای $u=0,\ v=2$ داریم:
+\begin{flalign*}
+F(0,2)=\frac{2 C(0) C(2)}{\sqrt{MN}}\sum_{i=0}^{7}\sum_{j=0}^{7} f(i,j)
+\cos\!\left(\frac{(2j+1)2\pi}{2N}\right)
+\end{flalign*}
+چون $\cos\!\left(\frac{(2i+1)0\pi}{2M}\right)=1$، الگو در راستای $i$ ثابت و فقط در راستای $j$ نوسانی با فرکانس $2$ دارد؛ این دقیقا همان الگوی تابع پایه در خانه $(0,2)$ در شکل است. بنابراین $F(0,2)$ میزان همبستگی تصویر با آن الگو را می‌سنجد.
