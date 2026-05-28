@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1778401354.10508 "HW.xdv" "HW.pdf" "HW" 1778401354.98872 0
-  "HW.xdv" 1778401353 37096 46427077c8b07f927a30101466889783 "xelatex"
+["xdvipdfmx"] 1779780516.41674 "HW.xdv" "HW.pdf" "HW" 1779780516.81543 0
+  "HW.xdv" 1779780516 37096 5655711fa698befd542acdaf78a9d8e6 "xelatex"
   (generated)
   "HW.pdf"
   (rewritten before read)
-["xelatex"] 1778401349.87515 "d:/Term 02/DigitalImageProcessing/Quiz3/Theoretical/HW/HW.tex" "HW.xdv" "HW" 1778401354.97218 0
+["xelatex"] 1779780514.4724 "d:/Term 02/DigitalImageProcessing/Quiz3/Theoretical/HW/HW.tex" "HW.xdv" "HW" 1779780516.80952 0
   "../commons/alg-fa.tex" 1707886330 1438 630aaa81895929eddba0efb6ab754a8c ""
   "../commons/sharif.png" 1707886330 34782 91c831e22cd5b8b30cdd0d7fa2b74a71 ""
   "../commons/style.tex" 1776711909 5426 0333a7229bc744e15e5ed07a9bd1d173 ""
@@ -228,10 +228,10 @@
   "C:/Program Files/MiKTeX/tex/latex/zref/zref-base.sty" 1750428951 20785 198a9cb2e04238d92c320d0d9edbd76a ""
   "C:/Program Files/MiKTeX/tex/xelatex/xetex-pstricks/pstricks.con" 1266284760 204 366747485ba2670f55166e66d1f21249 ""
   "C:/Users/ROG/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1762519379 27033816 3409389256dddeec52c4569a0d18311e ""
-  "HW.aux" 1778401353 163 e6e94b7fcdec31b61c11f7c0088ff366 "xelatex"
-  "HW.out" 1778401353 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "HW.tex" 1778401344 534 f14e00e63a73d307ef7864c6a5cbdf7f ""
-  "d:/Term 02/DigitalImageProcessing/Quiz3/Theoretical/HW/HW.tex" 1778401344 534 f14e00e63a73d307ef7864c6a5cbdf7f ""
+  "HW.aux" 1779780516 163 e6e94b7fcdec31b61c11f7c0088ff366 "xelatex"
+  "HW.out" 1779780515 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "HW.tex" 1779780513 534 c412d7a574fd18e12c0d26d0d0478aff ""
+  "d:/Term 02/DigitalImageProcessing/Quiz3/Theoretical/HW/HW.tex" 1779780513 534 c412d7a574fd18e12c0d26d0d0478aff ""
   (generated)
   "HW.aux"
   "HW.log"

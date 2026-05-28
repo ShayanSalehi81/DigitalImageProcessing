@@ -1,0 +1,23 @@
+\subsection*{الف}
+حرکت یکنواخت در راستای \(x\) باعث می‌شود تصویر نقطه در طول مسیر به‌طور یکنواخت پخش شود. بنابراین
+\begin{flalign*}
+h(x,y)
+&= \frac{1}{T}\int_{0}^{T}\delta(x-\alpha t)\,\delta(y)\,\mathrm{d}t
+= \frac{1}{\alpha_0}\int_{0}^{\alpha_0}\delta(x-u)\,\delta(y)\,\mathrm{d}u \\
+&=
+\begin{cases}
+\frac{1}{\alpha_0}\,\delta(y) \quad & 0 \le x \le \alpha_0 \\
+0 \quad & \text{otherwise}
+\end{cases} \\
+&= \frac{1}{\alpha_0}\,\text{rect}\!\left(\frac{x-\alpha_0/2}{\alpha_0}\right)\delta(y)
+\end{flalign*}
+که در آن \(\alpha_0=\alpha T\).
+
+\subsection*{ب}
+\begin{flalign*}
+H(\xi_1,\xi_2)
+&= \mathcal{F}\{h(x,y)\}
+= \frac{1}{\alpha_0}\int_{0}^{\alpha_0} e^{-j2\pi \xi_1 x}\,\mathrm{d}x \\
+&= e^{-j\pi \alpha_0 \xi_1}\,\text{sinc}(\alpha_0 \xi_1)
+\end{flalign*}
+که در آن \(\text{sinc}(u)=\dfrac{\sin(\pi u)}{\pi u}\) و \(H\) نسبت به \(\xi_2\) مستقل است.

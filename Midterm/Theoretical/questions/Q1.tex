@@ -1,0 +1,22 @@
+بردار تصادفی $x \sim \mathcal{N}(0,\Sigma)$ با
+$\Sigma=\begin{bmatrix}1&0\\0&4\end{bmatrix}$
+و $x=\begin{bmatrix}1\\2\end{bmatrix}$ داده شده است. ابتدا کمیت‌های لازم را حساب می‌کنیم:
+\begin{flalign*}
+k&=2, \qquad \det(\Sigma)=1\cdot 4=4, \qquad \Sigma^{-1}=\begin{bmatrix}1&0\\0&\frac{1}{4}\end{bmatrix} &&
+\end{flalign*}
+\begin{flalign*}
+(x-\mu)^{T}\Sigma^{-1}(x-\mu)
+&=\begin{bmatrix}1&2\end{bmatrix}
+\begin{bmatrix}1&0\\0&\frac{1}{4}\end{bmatrix}
+\begin{bmatrix}1\\2\end{bmatrix}
+=1+\frac{4}{4}=2 &&
+\end{flalign*}
+حال تابع چگالی را می‌نویسیم:
+\begin{flalign*}
+p(x)
+&=\frac{1}{\sqrt{(2\pi)^k\det(\Sigma)}}\exp\!\left(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\right) \\
+&=\frac{1}{\sqrt{(2\pi)^2\cdot 4}}\exp(-1)
+=\frac{1}{4\pi}e^{-1} &&
+\end{flalign*}
+بنابراین مقدار چگالی در $x=[1,2]^T$ برابر است با
+$p(x)=\frac{1}{4\pi}e^{-1}$.

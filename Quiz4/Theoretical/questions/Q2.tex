@@ -1,0 +1,31 @@
+\subsection*{الف}
+ابتدا تعداد کل پیکسل‌ها $N=100$ است، پس:
+\begin{flalign*}
+p_u(x_i) &= \left[ \tfrac{40}{100}, \tfrac{30}{100}, \tfrac{20}{100}, \tfrac{10}{100} \right]
+= [0.4,\,0.3,\,0.2,\,0.1] \\
+p_v(y_i) &= \left[ \tfrac{0}{100}, \tfrac{20}{100}, \tfrac{50}{100}, \tfrac{30}{100} \right]
+= [0,\,0.2,\,0.5,\,0.3] &&
+\end{flalign*}
+
+\subsection*{ب}
+\begin{flalign*}
+F_u(x_i) &= [0.4,\,0.7,\,0.9,\,1.0] \\
+F_v(y_i) &= [0,\,0.2,\,0.7,\,1.0] &&
+\end{flalign*}
+
+\subsection*{ج}
+در روش گسسته، برای هر $u$ مقدار $s=F_u(u)$ را محاسبه کرده و کوچک‌ترین $v$ را می‌یابیم که
+$F_v(v)\ge s$:
+\begin{flalign*}
+u=0:\ s=0.4 &\Rightarrow v=2 \quad (F_v=0.7)\\
+u=1:\ s=0.7 &\Rightarrow v=2 \quad (F_v=0.7)\\
+u=2:\ s=0.9 &\Rightarrow v=3 \quad (F_v=1.0)\\
+u=3:\ s=1.0 &\Rightarrow v=3 \quad (F_v=1.0) &&
+\end{flalign*}
+پس نگاشت:
+\begin{flalign*}
+0\to 2,\quad 1\to 2,\quad 2\to 3,\quad 3\to 3 &&
+\end{flalign*}
+
+\subsection*{د}
+وارون‌گیری \lr{CDF} ورودی فقط همسان‌سازی هیستوگرام (به توزیع یکنواخت) را می‌دهد، نه مشخصه‌سازی به توزیع دلخواه. علاوه بر این، \lr{CDF} در حالت گسسته پله‌ای و غیر وارون‌پذیر است و چند سطح خاکستری می‌توانند به یک مقدار نگاشت شوند؛ بنابراین باید از تطبیق با \lr{CDF} هدف استفاده کرد.

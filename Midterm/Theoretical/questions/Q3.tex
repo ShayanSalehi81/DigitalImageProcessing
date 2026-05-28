@@ -1,0 +1,205 @@
+\subsection*{الف}
+برای بررسی متعامد بودن، ضرب داخلی‌ها را حساب می‌کنیم:
+\begin{flalign*}
+s_0=\begin{bmatrix}1\\2\\1\end{bmatrix},\quad
+s_1=\begin{bmatrix}1\\0\\-1\end{bmatrix},\quad
+s_2=\begin{bmatrix}1\\-1\\1\end{bmatrix} &&
+\end{flalign*}
+\begin{flalign*}
+s_0^{T}s_1 &= 1\cdot 1+2\cdot 0+1\cdot (-1)=0,\\
+s_0^{T}s_2 &= 1\cdot 1+2\cdot (-1)+1\cdot 1=0,\\
+s_1^{T}s_2 &= 1\cdot 1+0\cdot (-1)+(-1)\cdot 1=0. &&
+\end{flalign*}
+پس $s_0,s_1,s_2$ متعامد هستند.
+
+\subsection*{ب}
+برای یکه‌سازی، اندازه‌ها را می‌یابیم:
+\begin{flalign*}
+\|s_0\|=\sqrt{1^2+2^2+1^2}=\sqrt{6},\qquad
+\|s_1\|=\sqrt{1^2+0^2+(-1)^2}=\sqrt{2},\qquad
+\|s_2\|=\sqrt{1^2+(-1)^2+1^2}=\sqrt{3}. &&
+\end{flalign*}
+پس بردارهای یکه:
+\begin{flalign*}
+u_0=\frac{s_0}{\sqrt{6}}=\frac{1}{\sqrt6}\begin{bmatrix}1\\2\\1\end{bmatrix},\quad
+u_1=\frac{s_1}{\sqrt{2}}=\frac{1}{\sqrt2}\begin{bmatrix}1\\0\\-1\end{bmatrix},\quad
+u_2=\frac{s_2}{\sqrt{3}}=\frac{1}{\sqrt3}\begin{bmatrix}1\\-1\\1\end{bmatrix}. &&
+\end{flalign*}
+ماتریس بردارهای متعامدِ یکه (ستون‌ها پایه‌ها هستند):
+\begin{flalign*}
+Q=\begin{bmatrix}
+\frac{1}{\sqrt6} & \frac{1}{\sqrt2} & \frac{1}{\sqrt3}\\
+\frac{2}{\sqrt6} & 0               & -\frac{1}{\sqrt3}\\
+\frac{1}{\sqrt6} & -\frac{1}{\sqrt2}& \frac{1}{\sqrt3}
+\end{bmatrix}. &&
+\end{flalign*}
+
+\subsection*{ج}
+چون ستون‌های $Q$ متعامدِ یکه‌اند، داریم:
+\begin{flalign*}
+Q^{T}Q=I \quad \Rightarrow \quad Q^{-1}=Q^{T}. &&
+\end{flalign*}
+پس $Q$ یک ماتریس تبدیلِ \lr{orthogonal} برای $s_0,s_1,s_2$ است (و تبدیل مختصات معمولاً با $Q^{T}$ انجام می‌شود).
+
+\subsection*{د}
+برای $f=\begin{bmatrix}3\\-6\\5\end{bmatrix}$، تبدیل (مختصات در پایه‌ی متعامدِ یکه) برابر است با:
+\begin{flalign*}
+\widehat{f}=Q^{T}f=
+\begin{bmatrix}
+u_0^{T}f\\
+u_1^{T}f\\
+u_2^{T}f
+\end{bmatrix}. &&
+\end{flalign*}
+\begin{flalign*}
+u_0^{T}f &= \frac{1}{\sqrt6}(3)+\frac{2}{\sqrt6}(-6)+\frac{1}{\sqrt6}(5)
+= \frac{-4}{\sqrt6} = -\frac{2\sqrt6}{3},\\
+u_1^{T}f &= \frac{1}{\sqrt2}(3)+0\cdot(-6)-\frac{1}{\sqrt2}(5)
+= \frac{-2}{\sqrt2}=-\sqrt2,\\
+u_2^{T}f &= \frac{1}{\sqrt3}(3)-\frac{1}{\sqrt3}(-6)+\frac{1}{\sqrt3}(5)
+= \frac{14}{\sqrt3}=\frac{14\sqrt3}{3}. &&
+\end{flalign*}
+بنابراین:
+\begin{flalign*}
+\widehat{f}=
+\begin{bmatrix}
+-\frac{4}{\sqrt6}\\[2pt]
+-\sqrt2\\[2pt]
+\frac{14}{\sqrt3}
+\end{bmatrix}. &&
+\end{flalign*}
+
+
+\subsection*{بررسی}
+محاسبات پاسخ قبلی را دوباره چک می‌کنیم:
+\begin{flalign*}
+s_0=\begin{bmatrix}1\\2\\1\end{bmatrix},\quad
+s_1=\begin{bmatrix}1\\0\\-1\end{bmatrix},\quad
+s_2=\begin{bmatrix}1\\-1\\1\end{bmatrix} &&
+\end{flalign*}
+
+\begin{flalign*}
+s_0^{T}s_1&=1\cdot 1+2\cdot 0+1\cdot(-1)=0,\\
+s_0^{T}s_2&=1\cdot 1+2\cdot(-1)+1\cdot 1=0,\\
+s_1^{T}s_2&=1\cdot 1+0\cdot(-1)+(-1)\cdot 1=0
+\quad\Rightarrow\quad s_0,s_1,s_2 \ \text{متعامد}. &&
+\end{flalign*}
+
+\begin{flalign*}
+\|s_0\|=\sqrt6,\qquad \|s_1\|=\sqrt2,\qquad \|s_2\|=\sqrt3 \\
+u_0=\frac{1}{\sqrt6}\begin{bmatrix}1\\2\\1\end{bmatrix},\quad
+u_1=\frac{1}{\sqrt2}\begin{bmatrix}1\\0\\-1\end{bmatrix},\quad
+u_2=\frac{1}{\sqrt3}\begin{bmatrix}1\\-1\\1\end{bmatrix}. &&
+\end{flalign*}
+
+اگر ستون‌ها را پایه بگیریم:
+\begin{flalign*}
+Q=[u_0\ u_1\ u_2]
+=
+\begin{bmatrix}
+\frac{1}{\sqrt6} & \frac{1}{\sqrt2} & \frac{1}{\sqrt3}\\
+\frac{2}{\sqrt6} & 0               & -\frac{1}{\sqrt3}\\
+\frac{1}{\sqrt6} & -\frac{1}{\sqrt2}& \frac{1}{\sqrt3}
+\end{bmatrix},
+\qquad Q^{T}Q=I \Rightarrow Q^{-1}=Q^{T}. &&
+\end{flalign*}
+
+نکتهٔ قراردادی: ماتریس تبدیلِ مستقیم برای گرفتن ضرایب معمولاً
+\lr{(transform coefficients)}
+\begin{flalign*}
+T=Q^{T}=
+\begin{bmatrix}
+u_0^{T}\\
+u_1^{T}\\
+u_2^{T}
+\end{bmatrix}
+\quad\Rightarrow\quad \widehat{f}=Tf=Q^{T}f. &&
+\end{flalign*}
+
+برای $f=\begin{bmatrix}3\\-6\\5\end{bmatrix}$:
+\begin{flalign*}
+\widehat{f}=
+Q^{T}f=
+\begin{bmatrix}
+u_0^{T}f\\
+u_1^{T}f\\
+u_2^{T}f
+\end{bmatrix}
+=
+\begin{bmatrix}
+\frac{1}{\sqrt6}(3-12+5)\\
+\frac{1}{\sqrt2}(3-5)\\
+\frac{1}{\sqrt3}(3+6+5)
+\end{bmatrix}
+=
+\begin{bmatrix}
+-\frac{4}{\sqrt6}\\
+-\sqrt2\\
+\frac{14}{\sqrt3}
+\end{bmatrix}. &&
+\end{flalign*}
+
+(پس از نظر محاسباتی مشکلی وجود ندارد؛ فقط در بخش (ج) ممکن است بسته به تعریف استاد، $Q$ یا $Q^{T}$ را «ماتریس تبدیل» بنامند که هر دو \lr{orthogonal} هستند.)
+
+\subsection*{ب (ادامه)}
+ابتدا توجه می‌کنیم که هرچند $s_0,s_1,s_2$ متعامدند، اما \lr{orthonormal} نیستند چون:
+\begin{flalign*}
+\|s_0\|=\sqrt6\neq 1,\qquad \|s_1\|=\sqrt2\neq 1,\qquad \|s_2\|=\sqrt3\neq 1. &&
+\end{flalign*}
+پس آن‌ها را یکه می‌کنیم:
+\begin{flalign*}
+u_0=\frac{1}{\sqrt6}\begin{bmatrix}1\\2\\1\end{bmatrix},\quad
+u_1=\frac{1}{\sqrt2}\begin{bmatrix}1\\0\\-1\end{bmatrix},\quad
+u_2=\frac{1}{\sqrt3}\begin{bmatrix}1\\-1\\1\end{bmatrix}. &&
+\end{flalign*}
+اکنون نشان می‌دهیم $\{u_0,u_1,u_2\}$ یک مجموعه‌ی \lr{orthonormal} است:
+\begin{flalign*}
+u_0^T u_0 &= \frac{1}{6}(1^2+2^2+1^2)=1,\\
+u_1^T u_1 &= \frac{1}{2}(1^2+0^2+(-1)^2)=1,\\
+u_2^T u_2 &= \frac{1}{3}(1^2+(-1)^2+1^2)=1,\\
+u_0^T u_1 &= \frac{1}{\sqrt{12}}(1+0-1)=0,\\
+u_0^T u_2 &= \frac{1}{\sqrt{18}}(1-2+1)=0,\\
+u_1^T u_2 &= \frac{1}{\sqrt{6}}(1+0-1)=0. &&
+\end{flalign*}
+پس ماتریس تبدیلِ ستون‌های متعامدِ یکه (ماتریس پایه) برابر است با:
+\begin{flalign*}
+Q=\big[u_0\ \ u_1\ \ u_2\big]=
+\begin{bmatrix}
+\frac{1}{\sqrt6} & \frac{1}{\sqrt2} & \frac{1}{\sqrt3}\\
+\frac{2}{\sqrt6} & 0               & -\frac{1}{\sqrt3}\\
+\frac{1}{\sqrt6} & -\frac{1}{\sqrt2}& \frac{1}{\sqrt3}
+\end{bmatrix},\qquad Q^TQ=I. &&
+\end{flalign*}
+
+\subsection*{ج}
+در بخش (ب) ماتریس $Q=[u_0\;u_1\;u_2]$ را ساختیم که ستون‌های آن متعامدِ یکه هستند؛ پس:
+\begin{flalign*}
+Q^{T}Q=I \quad \Rightarrow \quad Q^{-1}=Q^{T}. &&
+\end{flalign*}
+در \lr{orthonormal transform} معمولاً «تبدیل رو به جلو» (گرفتن ضرایب روی پایه‌ها) با قرار دادن بردارهای یکه به صورت سطر انجام می‌شود، یعنی:
+\begin{flalign*}
+A=\begin{bmatrix}
+u_0^{T}\\
+u_1^{T}\\
+u_2^{T}
+\end{bmatrix}=Q^{T}. &&
+\end{flalign*}
+بنابراین ماتریس تبدیل متعامد برابر است با:
+\begin{flalign*}
+A
+=
+\begin{bmatrix}
+\frac{1}{\sqrt6} & \frac{2}{\sqrt6} & \frac{1}{\sqrt6}\\
+\frac{1}{\sqrt2} & 0               & -\frac{1}{\sqrt2}\\
+\frac{1}{\sqrt3} & -\frac{1}{\sqrt3}& \frac{1}{\sqrt3}
+\end{bmatrix},\qquad
+AA^{T}=I. &&
+\end{flalign*}
+اگر $f$ بردارِ ورودی باشد، ضرایب تبدیل:
+\begin{flalign*}
+\widehat{f}=Af, &&
+\end{flalign*}
+و بازسازی (تبدیل معکوس) چون $A$ متعامد است:
+\begin{flalign*}
+f=A^{T}\widehat{f}=Q\,\widehat{f}. &&
+\end{flalign*}

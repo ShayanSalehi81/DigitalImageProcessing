@@ -1,0 +1,74 @@
+\subsection*{الف}
+هیستوگرام شمارشی تصویر ورودی:
+\begin{flalign*}
+h_I(10)=11,\; h_I(11)=10,\; h_I(12)=12,\; h_I(13)=10,\; h_I(14)=11,\; h_I(15)=10 &&
+\end{flalign*}
+
+\subsection*{ب}
+هیستوگرام تصویر مرجع:
+\begin{flalign*}
+h_R(5)=22,\; h_R(6)=21,\; h_R(7)=21 &&
+\end{flalign*}
+
+\subsection*{ج}
+تابع توزیع تجمعی \lr{CDF} (با نرمال‌سازی بر 64):
+\begin{flalign*}
+S(10)=\frac{11}{64},\;
+S(11)=\frac{21}{64},\;
+S(12)=\frac{33}{64},\;
+S(13)=\frac{43}{64},\;
+S(14)=\frac{54}{64},\;
+S(15)=1 &&
+\end{flalign*}
+\begin{flalign*}
+G(5)=\frac{22}{64},\;
+G(6)=\frac{43}{64},\;
+G(7)=1 &&
+\end{flalign*}
+
+\subsection*{د}
+با نگاشت $z=G^{-1}(S(r))$ و انتخاب کمترین $z$ با $G(z)\ge S(r)$:
+\begin{flalign*}
+10,11 \mapsto 5,\qquad 12,13 \mapsto 6,\qquad 14,15 \mapsto 7 &&
+\end{flalign*}
+
+\subsection*{ه}
+ماتریس تصویر تطبیق‌یافته:
+\[
+\begin{bmatrix}
+5&6&5&7&7&6&6&5\\
+7&7&6&6&5&5&7&7\\
+6&6&5&5&7&7&6&6\\
+5&5&7&7&6&6&5&5\\
+7&7&6&6&5&5&7&7\\
+6&5&5&7&7&6&6&5\\
+5&7&7&6&6&5&5&7\\
+6&6&5&5&7&7&6&6
+\end{bmatrix}
+\]
+
+\subsection*{و}
+هیستوگرام تصویر تطبیق‌یافته:
+\begin{flalign*}
+h_M(5)=21,\; h_M(6)=22,\; h_M(7)=21 &&
+\end{flalign*}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+ybar,
+bar width=10pt,
+width=0.75\linewidth,
+height=6cm,
+xlabel={سطح خاکستری},
+ylabel={تعداد},
+symbolic x coords={5,6,7},
+xtick=data,
+legend style={at={(0.5,1.05)},anchor=south,legend columns=2}
+]
+\addplot coordinates {(5,22) (6,21) (7,21)};
+\addplot coordinates {(5,21) (6,22) (7,21)};
+\legend{مرجع, تطبیق‌یافته}
+\end{axis}
+\end{tikzpicture}
+\end{center}
