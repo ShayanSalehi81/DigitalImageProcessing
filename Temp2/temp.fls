@@ -250,10 +250,5 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 OUTPUT temp.xdv
 INPUT temp.aux

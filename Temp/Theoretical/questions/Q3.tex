@@ -1,56 +1,31 @@
-\begin{RTL}
-در سنتز آنتی بیوتیک سفاماندول، مکانیزم تبدیل مرحله ی آخر که در زیر نمایش داده شده است و با خروج دی اکسید کربن است را بنویسید.
-\end{RTL}
+\subsection*{۴}
+حلقه‌های هتروسیکلی سه‌تایی مانند \lr{epoxide}، \lr{aziridine} و \lr{thiirane} به دلیل زاویه پیوندی بسیار کوچک، دارای تنش حلقه‌ای زیاد و در نتیجه واکنش‌پذیری بالا هستند. این تنش باعث می‌شود که این حلقه‌ها به آسانی توسط نوکلئوفیل‌های زیستی باز شوند و پیوند کووالانسی با اجزای سلولی برقرار کنند. از آنجا که تکثیر سلول‌های سرطانی سریع است، تشکیل آداکت با \lr{DNA} و ایجاد آسیب در همانندسازی و رونویسی، اثر ضد‌توموری ایجاد می‌کند. در بسیاری از داروهای شیمی‌درمانی، تبدیل به گونه‌های بسیار الکترون‌دوست (مانند \lr{aziridinium}) رخ می‌دهد که به نوکلئوبازها حمله می‌کنند و باعث توقف چرخه سلولی می‌شوند.
+\begin{flalign*}
+\theta_{\text{حلقه ۳تایی}} \approx 60^\circ \ll 109.5^\circ \;\Rightarrow\; \text{تنش حلقه‌ای زیاد و تمایل به باز شدن} &&
+\end{flalign*}
 
-\begin{center}
-\fbox{%
-\begin{minipage}{0.95\linewidth}
-\schemestart
-\chemname{\CephemNHtwo}{}
-\arrow{->[\chemfig{Ph-C(=O)-O-C(=O)-O}]} % anhydride (simplified)
-\chemname{\CephemMand}{\textcolor{purple}{Cefamandole}}
-\schemestop
-\end{minipage}}
-\end{center}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1, baseline=(current bounding box.center)]
+\draw (0,0) -- (1,0) -- (0.5,0.87) -- cycle;
+\node at (0.5,0.87) {\small O};
+\node at (0.5,-0.4) {\small \lr{epoxide}};
+\begin{scope}[xshift=2.2cm]
+\draw (0,0) -- (1,0) -- (0.5,0.87) -- cycle;
+\node at (0.5,0.87) {\small N};
+\node at (0.5,-0.4) {\small \lr{aziridine}};
+\end{scope}
+\begin{scope}[xshift=4.4cm]
+\draw (0,0) -- (1,0) -- (0.5,0.87) -- cycle;
+\node at (0.5,0.87) {\small S};
+\node at (0.5,-0.4) {\small \lr{thiirane}};
+\end{scope}
+\end{tikzpicture}
+\end{figure}
 
-\begin{RTL}
-\textbf{مکانیزم مرحله آخر (خروج CO2):}
-\end{RTL}
-
-\begin{center}
-\begin{tabular}{cccc}
-\begin{minipage}{0.23\linewidth}\centering
-\CephemMand
-\par\scriptsize 1) حمله گروه OH به کربونیل بتالاکتام
-\end{minipage} &
-\begin{minipage}{0.23\linewidth}\centering
-\CephemMandTetra
-\par\scriptsize 2) تشکیل واسطه تتراهدرال
-\end{minipage} &
-\begin{minipage}{0.23\linewidth}\centering
-\CephemMand
-\par\scriptsize 3) باز شدن حلقه بتالاکتام
-\end{minipage} &
-\begin{minipage}{0.23\linewidth}\centering
-\CephemMand
-\par\scriptsize 4) انتقال پروتون
-\end{minipage}
-\end{tabular}
-
-\vspace{0.6em}
-
-\begin{tabular}{ccc}
-\begin{minipage}{0.31\linewidth}\centering
-\CephemMand
-\par\scriptsize 5) ایجاد گروه ترک کننده مناسب
-\end{minipage} &
-\begin{minipage}{0.31\linewidth}\centering
-\CephemMand \;+\; \chemfig{O=C=O}
-\par\scriptsize 6) خروج CO2
-\end{minipage} &
-\begin{minipage}{0.31\linewidth}\centering
-\CephemMand
-\par\scriptsize 7) تشکیل محصول نهایی (سفاماندول)
-\end{minipage}
-\end{tabular}
-\end{center}
+\subsection*{۵}
+متابولیسم داروها معمولاً به چهار دسته کلی تقسیم می‌شود: اکسیداسیون، کاهش، هیدرولیز و کونژوگاسیون. دو مورد همراه با مثال:
+\begin{enumerate}
+\item اکسیداسیون: توسط آنزیم‌های \lr{CYP450} در کبد انجام می‌شود. برای مثال \lr{diazepam} با اکسیداسیون به \lr{desmethyldiazepam} تبدیل می‌شود که قطبی‌تر و دفع‌پذیرتر است.
+\item هیدرولیز: شکستن پیوندهای استری یا آمیدی توسط استرازها. برای مثال \lr{aspirin} در بدن هیدرولیز شده و به \lr{salicylic\ acid} و استات تبدیل می‌شود که اثر فارماکولوژیک اصلی را ایجاد می‌کند.
+\end{enumerate}

@@ -1,0 +1,25 @@
+\subsection*{الف}
+با بسط مجذور:
+\begin{flalign*}
+    \sigma_\eta^2(p,q) &= \sum_m \sum_n \big[v(m,n) - u(m-p,n-q)\big]^2 \\
+    &= \sum_m \sum_n v^2(m,n) - 2\sum_m \sum_n v(m,n)\,u(m-p,n-q) \\
+    &\quad + \sum_m \sum_n u^2(m-p,n-q) \\
+    &= \underbrace{\sum_m \sum_n v^2(m,n)}_{\text{ثابت}} - 2\,c_{vu}(p,q) + \underbrace{\sum_m \sum_n u^2(m-p,n-q)}_{\approx \text{ثابت}} &&
+\end{flalign*}
+جملهٔ نخست به $(p,q)$ وابسته نیست و جملهٔ سوم نیز انرژی $u$ است که با فرض هم‌پوشانی کامل مستقل از جابه‌جایی (تقریباً ثابت) است؛ پس تنها جملهٔ وابسته به $(p,q)$ همان $-2c_{vu}(p,q)$ است:
+\begin{flalign*}
+    \arg\min_{(p,q)} \sigma_\eta^2(p,q) = \arg\max_{(p,q)} c_{vu}(p,q) &&
+\end{flalign*}
+از این رو کمینه‌کردن انرژی عدم‌تطابق هم‌ارز با بیشینه‌کردن \lr{cross-correlation} است.
+
+\subsection*{ب}
+با نامساوی
+\lr{Cauchy-Schwarz}:
+\begin{flalign*}
+    |c_{vu}(p,q)| = \left|\sum_m \sum_n v(m,n)\,u(m-p,n-q)\right| \le \sqrt{\sum_m \sum_n v^2}\;\sqrt{\sum_m \sum_n u^2} &&
+\end{flalign*}
+تساوی (بیشینهٔ مطلق) دقیقاً زمانی برقرار است که دو سیگنال به‌طور خطی وابسته باشند:
+\begin{flalign*}
+    v(m,n) = \alpha\, u(m-p,n-q), \qquad \alpha > 0 &&
+\end{flalign*}
+یعنی هنگامی که الگوی جابه‌جا‌شدهٔ $u$ مضرب اسکالر مثبت $v$ باشد (تطابق کامل در آن جابه‌جایی).

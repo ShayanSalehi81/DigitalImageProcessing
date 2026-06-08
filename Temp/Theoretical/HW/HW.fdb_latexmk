@@ -1,14 +1,14 @@
 # Fdb version 4
-["xdvipdfmx"] 1779903403.91017 "HW.xdv" "HW.pdf" "HW" 1779903404.27423 0
-  "HW.xdv" 1779903403 56896 c685a574a3d122ee874bd15ab90a827c "xelatex"
+["xdvipdfmx"] 1779958106.78765 "HW.xdv" "HW.pdf" "HW" 1779958107.15257 0
+  "HW.xdv" 1779958106 18400 eec4c38c5d7ca517f7238209310845e4 "xelatex"
   (generated)
   "HW.pdf"
   (rewritten before read)
-["xelatex"] 1779903401.9017 "d:/Term 02/DigitalImageProcessing/Temp/Theoretical/HW/HW.tex" "HW.xdv" "HW" 1779903404.26829 0
+["xelatex"] 1779958104.9336 "d:/Term 02/DigitalImageProcessing/Temp/Theoretical/HW/HW.tex" "HW.xdv" "HW" 1779958107.1455 0
   "../commons/alg-fa.tex" 1707886330 1438 630aaa81895929eddba0efb6ab754a8c ""
   "../commons/sharif.png" 1707886330 34782 91c831e22cd5b8b30cdd0d7fa2b74a71 ""
   "../commons/style.tex" 1779903232 6134 6d3ea14c3ef8c1344a39d037c333c40f ""
-  "../questions/Q4.tex" 1779903399 1077 9cc4a9b9fe70f8cca32c77cbbec61365 ""
+  "../questions/Q3.tex" 1779958102 2717 9a7471e00ce522e9669e5b54a9b8bbc8 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136759654 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -234,10 +234,10 @@
   "C:/Program Files/MiKTeX/tex/latex/zref/zref-base.sty" 1750428951 20785 198a9cb2e04238d92c320d0d9edbd76a ""
   "C:/Program Files/MiKTeX/tex/xelatex/xetex-pstricks/pstricks.con" 1266284760 204 366747485ba2670f55166e66d1f21249 ""
   "C:/Users/ROG/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1762519379 27033816 3409389256dddeec52c4569a0d18311e ""
-  "HW.aux" 1779903403 422 5588664337ba8337b787a6257dd4b111 "xelatex"
-  "HW.out" 1779903403 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "HW.tex" 1779903260 612 b7715460ebca05c247b438d1afe294c3 ""
-  "d:/Term 02/DigitalImageProcessing/Temp/Theoretical/HW/HW.tex" 1779903260 612 b7715460ebca05c247b438d1afe294c3 ""
+  "HW.aux" 1779958106 163 ca7f142527cb3081abb334ff7bb0bca0 "xelatex"
+  "HW.out" 1779958106 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "HW.tex" 1779956903 610 00e05ae151b29d3bb71ea4da6127ee39 ""
+  "d:/Term 02/DigitalImageProcessing/Temp/Theoretical/HW/HW.tex" 1779956903 610 00e05ae151b29d3bb71ea4da6127ee39 ""
   (generated)
   "HW.aux"
   "HW.log"

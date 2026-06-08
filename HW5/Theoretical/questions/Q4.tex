@@ -1,0 +1,27 @@
+\subsection*{الف}
+هدف، بیشینه‌سازی نسبت پراکندگی بین‌کلاسی به درون‌کلاسی پس از تصویر روی $w$ است:
+\begin{flalign*}
+    J(w) = \frac{w^T B\, w}{w^T S\, w} &&
+\end{flalign*}
+که در آن $B$ ماتریس پراکندگی بین‌کلاسی (\lr{Between-class scatter}) و $S$ ماتریس پراکندگی درون‌کلاسی (\lr{Within-class scatter}) است:
+\begin{flalign*}
+    B &= (\mu_1 - \mu_2)(\mu_1 - \mu_2)^T \\
+    S &= \sum_{c}\sum_{x \in c} (x - \mu_c)(x - \mu_c)^T &&
+\end{flalign*}
+بیشینه‌ساز با حل $S^{-1} B\, w = \lambda w$ به‌دست می‌آید.
+
+\subsection*{ب}
+\textit{تخصیص.} فاصلهٔ مربعی هر نقطه تا دو مرکز $c_1=(1,1)$ و $c_2=(5,4)$:
+\begin{flalign*}
+    x_1=(1,1):&\quad d^2(x_1,c_1)=0,\quad d^2(x_1,c_2)=16+9=25 \;\Rightarrow\; C_1 \\
+    x_2=(2,1):&\quad d^2(x_2,c_1)=1+0=1,\quad d^2(x_2,c_2)=9+9=18 \;\Rightarrow\; C_1 \\
+    x_3=(4,3):&\quad d^2(x_3,c_1)=9+4=13,\quad d^2(x_3,c_2)=1+1=2 \;\Rightarrow\; C_2 \\
+    x_4=(5,4):&\quad d^2(x_4,c_1)=16+9=25,\quad d^2(x_4,c_2)=0 \;\Rightarrow\; C_2 &&
+\end{flalign*}
+بنابراین $C_1=\{x_1,x_2\}$ و $C_2=\{x_3,x_4\}$.
+
+\textit{به‌روزرسانی مراکز.}
+\begin{flalign*}
+    c_1 &= \tfrac{1}{2}\big((1,1)+(2,1)\big) = (1.5,\,1) \\
+    c_2 &= \tfrac{1}{2}\big((4,3)+(5,4)\big) = (4.5,\,3.5) &&
+\end{flalign*}

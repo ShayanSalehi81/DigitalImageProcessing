@@ -493,9 +493,9 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT ..\questions\Q4.tex
-INPUT ..\questions\Q4.tex
-INPUT ..\questions\Q4.tex
+INPUT ..\questions\Q3.tex
+INPUT ..\questions\Q3.tex
+INPUT ..\questions\Q3.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
