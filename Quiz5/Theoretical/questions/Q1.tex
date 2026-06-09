@@ -1,0 +1,20 @@
+\subsection*{الف}
+انتساب نقاط با معیار فاصله به نزدیک‌ترین مرکز ($\mu_1=4,\ \mu_2=12$):
+\begin{flalign*}
+    |x-\mu_1| < |x-\mu_2| &\iff x < 8 &&\\
+    C_1 &= \{2,3,5\}, \quad C_2 = \{14,16,18\} &&
+\end{flalign*}
+به‌روزرسانی مراکز:
+\begin{flalign*}
+    \mu_1 &= \frac{2+3+5}{3} = \frac{10}{3} \approx 3.33 \\
+    \mu_2 &= \frac{14+16+18}{3} = 16 &&
+\end{flalign*}
+
+\subsection*{ب}
+در \lr{K-Means} تعداد خوشه‌ها $k$ ثابت و از پیش معین است؛ \lr{ISODATA} این محدودیت را با مکانیسم‌های تطبیقی برمی‌دارد:
+\begin{flalign*}
+    &\text{\lr{Splitting}:} && \sigma_j > \sigma_{\max} \implies \text{تقسیم خوشه } j \text{ به دو خوشه} \\
+    &\text{\lr{Merging}:} && \|\mu_i - \mu_j\| < d_{\min} \implies \text{ادغام دو خوشه} \\
+    &\text{\lr{Discarding}:} && N_j < N_{\min} \implies \text{حذف خوشهٔ کم‌جمعیت} &&
+\end{flalign*}
+بدین ترتیب \lr{ISODATA} تعداد خوشه‌ها را در حین اجرا به‌صورت پویا تنظیم می‌کند و نسبت به مقداردهی اولیهٔ $k$ حساسیت کمتری دارد.
