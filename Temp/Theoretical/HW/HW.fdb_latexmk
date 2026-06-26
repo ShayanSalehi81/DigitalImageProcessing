@@ -1,33 +1,22 @@
 # Fdb version 4
-["xdvipdfmx"] 1779958106.78765 "HW.xdv" "HW.pdf" "HW" 1779958107.15257 0
-  "HW.xdv" 1779958106 18400 eec4c38c5d7ca517f7238209310845e4 "xelatex"
+["xdvipdfmx"] 1781416571.46936 "HW.xdv" "HW.pdf" "HW" 1781416571.84963 0
+  "HW.xdv" 1781416571 9348 9b0c3ecbe0b9a06f2667e5ab419584e9 "xelatex"
   (generated)
   "HW.pdf"
   (rewritten before read)
-["xelatex"] 1779958104.9336 "d:/Term 02/DigitalImageProcessing/Temp/Theoretical/HW/HW.tex" "HW.xdv" "HW" 1779958107.1455 0
+["xelatex"] 1781416569.48092 "d:/Term 02/DigitalImageProcessing/Temp/Theoretical/HW/HW.tex" "HW.xdv" "HW" 1781416571.84034 0
   "../commons/alg-fa.tex" 1707886330 1438 630aaa81895929eddba0efb6ab754a8c ""
   "../commons/sharif.png" 1707886330 34782 91c831e22cd5b8b30cdd0d7fa2b74a71 ""
   "../commons/style.tex" 1779903232 6134 6d3ea14c3ef8c1344a39d037c333c40f ""
-  "../questions/Q3.tex" 1779958102 2717 9a7471e00ce522e9669e5b54a9b8bbc8 ""
+  "../questions/Q1.tex" 1781416568 1298 b2ff43c15c64f1dc72486b23f75d48c2 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136759654 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233951854 908 2921f8a10601f252058503cc6570e581 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1233951854 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr6.tfm" 1136765053 1300 b62933e007d01cfd073f79b963c01526 ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmr8.tfm" 1136765053 1292 21c1c5bfeaebccffdb478fd231a0997d ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
-  "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Program Files/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
   "C:/Program Files/MiKTeX/tex/generic/bitset/bitset.sty" 1575926576 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "C:/Program Files/MiKTeX/tex/generic/chemfig/chemfig.tex" 1762694053 119971 8e7220e7f615f712a74ff7b8233fb349 ""
@@ -234,10 +223,10 @@
   "C:/Program Files/MiKTeX/tex/latex/zref/zref-base.sty" 1750428951 20785 198a9cb2e04238d92c320d0d9edbd76a ""
   "C:/Program Files/MiKTeX/tex/xelatex/xetex-pstricks/pstricks.con" 1266284760 204 366747485ba2670f55166e66d1f21249 ""
   "C:/Users/ROG/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1762519379 27033816 3409389256dddeec52c4569a0d18311e ""
-  "HW.aux" 1779958106 163 ca7f142527cb3081abb334ff7bb0bca0 "xelatex"
-  "HW.out" 1779958106 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "HW.tex" 1779956903 610 00e05ae151b29d3bb71ea4da6127ee39 ""
-  "d:/Term 02/DigitalImageProcessing/Temp/Theoretical/HW/HW.tex" 1779956903 610 00e05ae151b29d3bb71ea4da6127ee39 ""
+  "HW.aux" 1781416571 163 ca7f142527cb3081abb334ff7bb0bca0 "xelatex"
+  "HW.out" 1781416571 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "HW.tex" 1781415384 618 57cc81bf90b0b5f60a4cf4d7d823a543 ""
+  "d:/Term 02/DigitalImageProcessing/Temp/Theoretical/HW/HW.tex" 1781415384 618 57cc81bf90b0b5f60a4cf4d7d823a543 ""
   (generated)
   "HW.aux"
   "HW.log"
